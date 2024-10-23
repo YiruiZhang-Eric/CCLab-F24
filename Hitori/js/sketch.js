@@ -1,4 +1,3 @@
-console.log("this thing works")
 //variables for bubbles
 let x1=150
 let x2=230
@@ -52,7 +51,17 @@ let middis=0
 //variables for program control
 let doGameOver=false
 
+  let xd1
+  let xd2
+  let xd3
+  let xd4
+  let xd5
+  let xd6
+  let topRandomRange1
+  let topRandomRange2
+
 function setup() {
+  // createCanvas(800, 500);
   let cnv = createCanvas(800, 500);
   cnv.parent("p5-canvas-container")
   
@@ -64,6 +73,17 @@ function setup() {
     xArray2[i] = random(0, width);
     yArray2[i] = random(0, height);
   }
+  
+  
+   //variables for debris
+  xd1=random(-50,10)
+  xd2=random(-10,15)
+  xd3=random(-20,10)
+  xd4=random(-20,20)
+  xd5=random(-60,5)
+  xd6=random(-15,10)
+  topRandomRange1=random(-10,20)
+  topRandomRange2=random(-20,20)
 }
 
 function draw() {
@@ -421,57 +441,57 @@ function drawFloatingDebris(){
 }
 
 function drawBackDebris(){
-  //debris 4
+    //debris 4
   fill(58,59,80,180)
   noStroke()
-  triangle(440,370,500,360,445,280)
+  triangle(xd4+440,370,xd4+500,360,xd4+topRandomRange2+445,280)
   fill(58,59,80,100)
-  triangle(440,370,500,360,458,380)
+  triangle(xd4+440,370,xd4+500,360,xd4+topRandomRange2+458,380)
   
-  //debris 5
+    //debris 5
   fill(58,59,80,160)
   noStroke()
-  triangle(280,350,340,350,285,320)
+  triangle(xd5+280,350,xd5+340,350,xd5+topRandomRange1+285,320)
   fill(58,59,80,90)
-  triangle(280,350,340,350,290,360)
+  triangle(xd5+280,350,xd5+340,350,xd5+topRandomRange1+290,360)
   
   //debris 6
   fill(58,59,80,140)
   beginShape()
-  vertex(690,345)
-  vertex(740,345)
-  vertex(725,310)
-  vertex(695,320)
+  vertex(xd6+690,345)
+  vertex(xd6+740,345)
+  vertex(xd6+725,310)
+  vertex(xd6+695,320)
   endShape()
   fill(58,59,80,80)
   beginShape()
-  vertex(690,345)
-  vertex(740,345)
-  vertex(735,354)
-  vertex(705,352)
+  vertex(xd6+690,345)
+  vertex(xd6+740,345)
+  vertex(xd6+735,354)
+  vertex(xd6+705,352)
   endShape()
   
-  //debris 1
+    //debris 1
   fill(58,59,80,190)
   noStroke()
-  triangle(120,385,180,380,110,320)
+  triangle(xd1+topRandomRange1+120,385,xd1+180,380,xd1+topRandomRange1+110,320)
   fill(58,59,80,100)
-  triangle(120,385,180,380,115,400)
+  triangle(xd1+topRandomRange1+120,385,xd1+180,380,xd1+topRandomRange1+115,400)
 }
 
 function drawFrontDebris(){
   //debris 3
-  fill(58,59,80,255)
+  fill(58,59,80,200)
   noStroke()
-  triangle(540,450,670,420,610,340)
+  triangle(xd3+topRandomRange1+540,430,xd3+670,400,xd3+topRandomRange1+610,320)
   fill(58,59,80,105)
-  triangle(540,450,670,420,630,455)
+  triangle(xd3+topRandomRange1+540,430,xd3+670,400,xd3+topRandomRange1+630,435)
   
   //debris 2
-  fill(58,59,80,255)
+  fill(58,59,80,210)
   noStroke()
-  triangle(250,440,390,445,375,370)
+  triangle(xd2+250,440,xd2+390,445,xd2+topRandomRange2+375,370)
   fill(58,59,80,110)
-  triangle(250,440,390,445,376,470)
+  triangle(xd2+250,440,xd2+390,445,xd2+topRandomRange2+376,470)
 }
 
