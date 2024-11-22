@@ -1,0 +1,48 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+}
+
+h1{
+  font-weight:bold;
+  color:blue;
+  font-family: sans-serif;
+}
+
+p{
+  font-family:'Times New Roman', Times, serif;
+  background-color:blanchedalmond;
+}
+
+.box{
+  /* border-width: 1px;
+  border-style: solid;
+  border-color: black; */
+  border: 1px dotted black;
+  margin: 10px;
+  padding: 10px;
+  /* margin-bottom: 100px; */
+  background-color:aquamarine;
+}
+
+.box2{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.box3{
+  position:fixed;
+  right:50px;
+  bottom:50px;
+}
+
+.box4{
+  position:relative;
+  left:10px;
+  top:-20px;
+}

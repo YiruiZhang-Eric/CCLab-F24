@@ -1,0 +1,46 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+.back-button{
+  color:white;
+  font-weight: bold;
+  font-size: 25px;
+
+  margin: 30px;
+  padding:20px;
+  border:2px solid white;
+
+  position: fixed;
+  left: 15px;
+  top:15px;
+
+  align-items: center;
+}
+
+.annotation{
+  color:white;
+  padding: 20px;
+  border: 2px solid white;
+  margin: 30px;
+
+  position: fixed;
+  left:15px;
+  bottom:15px;
+  align-items: center;
+}
+
+canvas {
+  display: block;
+}
+
+.sound-wave{
+  background-color: transparent;
+  width: 800px;
+  height: 100vh;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
