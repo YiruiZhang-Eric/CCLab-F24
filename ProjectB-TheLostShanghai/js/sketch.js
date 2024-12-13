@@ -240,7 +240,7 @@ class Fracture{
       //     }, 500)
       //   }
       // });
-      let popup = window.open("./assets/Video/test/test.html", "newwindow", "width=1280 height=720 top=0, left=0, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no")
+      let popup = window.open("./assets/Audio/Baoshan/Baoshan.html", "newwindow", "width=1280 height=720 top=0, left=0, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=no, status=no")
       popup.addEventListener("unload", (eventInfo)=>{
         if(eventInfo.timeStamp > 80){
           console.log("it closes", this)
